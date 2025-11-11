@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Креація подарунків — Головна</title>
+  <meta name="description" content="Креативні персоналізовані подарунки — смола, цифрові рамки, фотоальбоми. Замовлення через форму.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Креація подарунків</a>
+      <nav class="nav">
+        <a href="index.html">Головна</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">Про мене</a>
+        <a href="#order" class="btn">Замовити</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Креативні подарунки з душею</h1>
+          <p>Персоналізовані авторські подарунки: квіти в прозорій смолі, цифрові рамки з відео, фотокниги з індивідуальними підписами. Ідеальний подарунок для будь-якого свята.</p>
+          <a href="catalog.html" class="btn">Переглянути каталог</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/product1.svg" alt="Приклад подарунка">
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h3>Унікальність</h3>
+        <p>Кожен виріб створюється під замовлення і може бути персоналізований.</p>
+      </article>
+      <article>
+        <h3>Українське виробництво</h3>
+        <p>Всі матеріали вибрані з думкою про екологію й довговічність.</p>
+      </article>
+      <article>
+        <h3>Швидка комунікація</h3>
+        <p>Після подання форми з вами зв'яжеться менеджер для уточнення деталей.</p>
+      </article>
+    </section>
+
+    <section class="catalog-preview container">
+      <h2>Популярні позиції</h2>
+      <div class="cards">
+        <a class="card" href="product.html?id=1">
+          <img src="assets/images/product1.svg" alt="Круглий стіл зі смоли">
+          <h4>Квітковий столик із смоли</h4>
+          <p>Ручна робота. Прозора епоксидна смола, вкраплення живих квітів.</p>
+        </a>
+        <a class="card" href="product.html?id=2">
+          <img src="assets/images/product2.svg" alt="Цифрова рамка">
+          <h4>Цифрова рамка з відео</h4>
+          <p>Завантажуйте відео/фото — ми підготуємо готову рамку.</p>
+        </a>
+        <a class="card" href="product.html?id=3">
+          <img src="assets/images/product3.svg" alt="Фотоальбом">
+          <h4>Персоналізований фотоальбом</h4>
+          <p>Індивідуальні підписи, тематичні розділи, подарункова упаковка.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="order" class="order container">
+      <h2>Замовлення</h2>
+      <p>Заповніть форму — менеджер зв'яжеться з вами для підтвердження та узгодження деталей.</p>
+      <form id="orderForm">
+        <div class="form-row">
+          <label>Ім'я <input type="text" name="name" required></label>
+          <label>Телефон або email <input type="text" name="contact" required></label>
+        </div>
+        <div class="form-row">
+          <label>Продукт / Ідея <input type="text" name="product" placeholder="Наприклад: Квітковий столик"></label>
+        </div>
+        <div class="form-row">
+          <label>Повідомлення <textarea name="message" rows="4" placeholder="Додайте побажання чи терміни"></textarea></label>
+        </div>
+        <button type="submit" class="btn">Відправити замовлення</button>
+      </form>
+      <div id="orderResult" class="order-result" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Креація подарунків — персональний бренд. Всі права захищено.</p>
+      <p>Зв'язок: <a href="mailto:info@example.com">info@example.com</a> • Instagram: <a href="#">@kreaktsiya</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
